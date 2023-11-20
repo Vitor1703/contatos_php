@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5792aa07-8f2a-4cee-84a3-ea65edc18ebe" name="Changes" comment="Created a new page and fixed the redirection of it.">
+      <change beforePath="$PROJECT_DIR$/bd_tarefas.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="2UMI9YQkxDMjlDqsuNKxJ8jhB9F" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/xampp/htdocs/contatos_php",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor.code.editing",
+    "settings.editor.splitter.proportion": "0.24612203",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JavaScript Debug.edit.php">
+    <configuration name="edit.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/crud/edit.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/crud/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:80/crud/index.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="edit.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/edit.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="save.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/save.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.edit.php" />
+      <item itemvalue="JavaScript Debug.index.php (1)" />
+      <item itemvalue="JavaScript Debug.index.php" />
+      <item itemvalue="PHP Script.edit.php" />
+      <item itemvalue="PHP Script.save.php" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.edit.php" />
+        <item itemvalue="PHP Script.edit.php" />
+        <item itemvalue="JavaScript Debug.index.php (1)" />
+        <item itemvalue="JavaScript Debug.index.php" />
+        <item itemvalue="PHP Script.save.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5792aa07-8f2a-4cee-84a3-ea65edc18ebe" name="Changes" comment="" />
+      <created>1692742872051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692742872051</updated>
+      <workItem from="1692742873076" duration="7073000" />
+      <workItem from="1692752038644" duration="1644000" />
+      <workItem from="1693003787521" duration="11366000" />
+      <workItem from="1693951936527" duration="14919000" />
+      <workItem from="1695161477446" duration="2908000" />
+      <workItem from="1695169034917" duration="3945000" />
+      <workItem from="1695665182616" duration="28000" />
+      <workItem from="1695665225347" duration="39000" />
+      <workItem from="1695766058232" duration="8216000" />
+      <workItem from="1696362223872" duration="622000" />
+      <workItem from="1697063518438" duration="1233000" />
+      <workItem from="1697669361088" duration="95000" />
+      <workItem from="1698185870172" duration="1533000" />
+    </task>
+    <task id="LOCAL-00001" summary="Created a new page and fixed the redirection of it.">
+      <option name="closed" value="true" />
+      <created>1695776349400</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695776349400</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created a new page and fixed the redirection of it." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a new page and fixed the redirection of it." />
+  </component>
+</project>
