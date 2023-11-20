@@ -1,0 +1,1 @@
+<!-- Adicionar função para cadastrar um novo contato -->
