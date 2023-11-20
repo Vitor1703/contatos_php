@@ -3,10 +3,10 @@
 require_once 'conexao.php';
 
 $email = $_POST['email'];
-$pwd = $_POST['password'];
+$pwd = $_POST['senha'];
 $hash = password_hash($pwd, PASSWORD_ARGON2I);
 
-$sqlInsert = "INSERT INTO `usuarios`(`email`, `password`) VALUES ('$email','$hash')";
+$sqlInsert = "INSERT INTO `usuarios`(`email`, `senha`) VALUES ('$email','$hash')";
 $result = mysqli_query($conn, $sqlInsert);
 
 if (!$result) {
