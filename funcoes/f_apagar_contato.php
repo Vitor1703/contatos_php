@@ -1,0 +1,1 @@
+<!-- Adicionar função para apagar um contato -->
