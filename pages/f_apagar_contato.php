@@ -6,6 +6,6 @@ $id = $_GET['id'];
 $sqlDelete = "DELETE FROM CONTATOS WHERE id = $id";
 $result = mysqli_query($conn, $sqlDelete);
 
-header("Location: pages/contatos.php");
+header("Location: contatos.php");
 
 ?>
