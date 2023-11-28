@@ -22,9 +22,9 @@ require_once 'conexao.php';
   </header>
 
   <div class="container mt-2 mb-2">
-    <button class="btn btn-primary rounded">
+    <a href="novo_contato.php" class="btn btn-primary rounded">
       <i class="fas fa-plus"></i> Novo Contato
-    </button>
+    </a>
   </div>
 
   <div class="container mt-2">

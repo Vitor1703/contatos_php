@@ -2,7 +2,6 @@
 
 require_once 'conexao.php';
 
-$id = $_GET['id'];
 $nome = $_POST['nome'];
 $sobrenome = $_POST['sobrenome'];
 $empresa = $_POST['empresa'];
@@ -24,6 +23,6 @@ if (!$result) {
     echo 'Query falhou!';
 }
 
-header('Location: pages/contatos.php');
+header('Location: contatos.php');
 
 ?>
