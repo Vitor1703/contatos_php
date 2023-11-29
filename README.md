@@ -9,6 +9,7 @@ Agenda de Contatos: Um sistema para armazenar informações de contatos, incluin
 Para garantir o correto funcionamento do projeto, é necessário configurar o ambiente de desenvolvimento. Siga as etapas abaixo:
 
 ### Banco de Dados
+Nome do banco: <strong>agenda
 
 O projeto requer a criação de duas tabelas no banco de dados. Execute os seguintes comandos SQL para criar as tabelas necessárias:
 
