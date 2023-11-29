@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
     $notas = $row['notas'];
 }
 
-if(isset($_POST['update'])){
+if (isset($_POST['update'])) {
     $id = $_GET['id'];
     $nome = $_POST['nome'];
     $sobrenome = $_POST['sobrenome'];
@@ -50,11 +50,9 @@ if(isset($_POST['update'])){
     `pais`='$pais',
     `aniversario`='$aniversario',
     `notas`='$notas'
-    WHERE `id`='$id'";
+    WHERE `id`= '$id'";
 
     $result = mysqli_query($conn, $sqlUpdate);
 
     header("Location: contatos.php");
 }
-
-?>

@@ -17,75 +17,77 @@ require_once 'f_editar_contato.php';
 <body>
     <div class="container mt-5">
         <form action="f_editar_contato.php?id=<?= $row['id'] ?>" method="POST">
+
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="nome">Nome</label>
-                    <input type="text" class="form-control" id="nome" name="nome" value="<?=$nome?>" required >
+                    <input type="text" class="form-control" id="nome" name="nome" value="<?= $nome ?>" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="<?=$sobrenome?>" required>
+                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="<?= $sobrenome ?>" required>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="empresa">Empresa</label>
-                    <input type="text" class="form-control" id="empresa" name="empresa" value="<?=$empresa?>">
+                    <input type="text" class="form-control" id="empresa" name="empresa" value="<?= $empresa ?>">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone" value="<?=$telefone?>">
+                    <input type="tel" class="form-control" id="telefone" name="telefone" value="<?= $telefone ?>">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="cep">CEP</label>
-                    <input type="text" class="form-control" id="cep" name="cep" value="<?=$cep?>">
+                    <input type="text" class="form-control" id="cep" name="cep" value="<?= $cep ?>">
                 </div>
                 <div class="form-group col-md-8">
                     <label for="rua">Rua</label>
-                    <input type="text" class="form-control" id="rua" name="rua" value="<?=$rua?>">
+                    <input type="text" class="form-control" id="rua" name="rua" value="<?= $rua ?>">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="bairro">Bairro</label>
-                    <input type="text" class="form-control" id="bairro" name="bairro" value="<?=$bairro?>">
+                    <input type="text" class="form-control" id="bairro" name="bairro" value="<?= $bairro ?>">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="cidade">Cidade</label>
-                    <input type="text" class="form-control" id="cidade" name="cidade" value="<?=$cidade?>">
+                    <input type="text" class="form-control" id="cidade" name="cidade" value="<?= $cidade ?>">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="estado">Estado</label>
-                    <input type="text" class="form-control" id="estado" name="estado" value="<?=$estado?>">
+                    <input type="text" class="form-control" id="estado" name="estado" value="<?= $estado ?>">
                 </div>
                 <div class="form-group col-md-8">
                     <label for="pais">País</label>
-                    <input type="text" class="form-control" id="pais" name="pais" value="<?=$pais?>">
+                    <input type="text" class="form-control" id="pais" name="pais" value="<?= $pais ?>">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="aniversario">Aniversário</label>
-                    <input type="date" class="form-control" id="aniversario" name="aniversario" value="<?=$aniversario?>">
+                    <input type="date" class="form-control" id="aniversario" name="aniversario" value="<?= $aniversario ?>">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="notas">Notas</label>
-                    <textarea class="form-control" id="notas" name="notas" rows="3"><?=$notas?></textarea>
+                    <textarea class="form-control" id="notas" name="notas" rows="3"><?= $notas ?></textarea>
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Salvar</button>
+            <button type="submit" class="btn btn-primary" name="update">Salvar</button>
         </form>
     </div>
+
 </body>
 
 </html>
