@@ -56,7 +56,7 @@ require_once 'conexao.php';
             <td><?php echo $row['cidade'] ?></td>
             <td><?php echo $row['notas'] ?></td>
             <td>
-              <a href="f_editar_contato.php?id=<?= $row['id'] ?>" class="btn btn-secondary">
+              <a href="editar_contato.php?id=<?= $row['id'] ?>" class="btn btn-secondary">
                 <i class="fas fa-marker"></i>
               </a>
               <a href="f_apagar_contato.php?id=<?= $row['id'] ?>" class="btn btn-danger">

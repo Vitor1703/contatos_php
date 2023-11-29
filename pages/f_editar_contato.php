@@ -54,7 +54,7 @@ if(isset($_POST['update'])){
 
     $result = mysqli_query($conn, $sqlUpdate);
 
-    header("Location: pages/contatos.php");
+    header("Location: contatos.php");
 }
 
 ?>
