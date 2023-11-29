@@ -13,6 +13,6 @@ if (!$result) {
     echo 'Query falhou!';
 }
 
-header('Location: pages/login.php');
+header('Location: login.php');
 
 ?>

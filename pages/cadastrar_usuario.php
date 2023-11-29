@@ -1,3 +1,7 @@
+<?php
+require_once 'conexao.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,15 +16,12 @@
 <body>
 
     <main>
-
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mx-auto mt-5">
-                    <div class="card-header text-center">
-                        LOGIN
-                    </div>
+                    <div class="card-header text-center">CADASTRAR</div>
                     <div class="card card-body">
-                        <form action="f_login.php" method="POST">
+                        <form action="f_cadastrar_usuario.php" method="POST">
                             <div class="form-group">
                                 <input type="email" name="email" id="email" placeholder="email@email.com" class="form-control">
                             </div>
@@ -28,17 +29,16 @@
                                 <input type="password" name="password" id="password" placeholder="**********" class="form-control">
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="login" value="Login" class="btn btn-info btn-block" id="button">
+                                <input type="submit" name="save" value="save" class="btn btn-success btn-block" id="button">
                             </div>
                             <div class="text-center">
-                                <a href="cadastrar_usuario.php">Cadastrar</a>
+                                <a href="login.php">Voltar</a>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-
     </main>
 
 </body>

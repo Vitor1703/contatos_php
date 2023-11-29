@@ -12,9 +12,9 @@ if (isset($_POST['login'])) {
     $correctSenha = password_verify($senha, $userData['senha'] ?? '');
     
     if ($correctSenha) {
-        header("Location: pages/contatos.php");
+        header("Location: contatos.php");
     } else {
-        header("Location: pages/login.php?success=0");
+        header("Location: login.php?success=0");
     }
 }
 
