@@ -1,5 +1,5 @@
 # contatos_php
-Atividade da faculdade
+Avaliação 2º bimestre - 6º período (Bianca Amaral - Heito Zaremba - Vitor Hugo)
 
 ## Objetivo
 Agenda de Contatos: Um sistema para armazenar informações de contatos, incluindo nome, número de telefone, endereço de e-mail e outras informações relevantes.
