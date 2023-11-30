@@ -2,7 +2,7 @@
 Avaliação 2º bimestre - 6º período (Bianca Amaral - Heito Zaremba - Vitor Hugo)
 
 ## Objetivo
-Agenda de Contatos: Um sistema para armazenar informações de contatos, incluindo nome, número de telefone, endereço de e-mail e outras informações relevantes.
+Agenda de Contatos: Um sistema para armazenar informações de contatos, incluindo nome, número de telefone e celular, endereço de e-mail e outras informações relevantes.
 
 ## Configuração do Ambiente
 
@@ -20,6 +20,7 @@ CREATE TABLE contatos (
     sobrenome VARCHAR(255) DEFAULT NULL,
     empresa VARCHAR(255) DEFAULT NULL,
     telefone VARCHAR(20) NOT NULL,
+    celular VARCHAR(20) NOT NULL,
     email VARCHAR(100) DEFAULT NULL,
     cep VARCHAR(10) DEFAULT NULL,
     rua VARCHAR(255) DEFAULT NULL,
