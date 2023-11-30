@@ -32,7 +32,7 @@ require_once 'conexao.php';
                                     class="form-control">
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="save" value="save" class="btn btn-success btn-block"
+                                <input type="submit" name="save" value="Salvar" class="btn btn-success btn-block"
                                     id="button">
                             </div>
                             <div class="text-center">
