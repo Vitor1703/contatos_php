@@ -12,6 +12,8 @@ if (isset($_GET['id'])) {
     $sobrenome = $row['sobrenome'];
     $empresa = $row['empresa'];
     $telefone = $row['telefone'];
+    $celular = $row['celular'];
+    $email = $row['email'];
     $cep = $row['cep'];
     $rua = $row['rua'];
     $bairro = $row['bairro'];
@@ -28,6 +30,8 @@ if (isset($_POST['update'])) {
     $sobrenome = $_POST['sobrenome'];
     $empresa = $_POST['empresa'];
     $telefone = $_POST['telefone'];
+    $celular = $_POST['celular'];
+    $email = $_POST['email'];
     $cep = $_POST['cep'];
     $rua = $_POST['rua'];
     $bairro = $_POST['bairro'];
@@ -42,6 +46,8 @@ if (isset($_POST['update'])) {
     `sobrenome`='$sobrenome', 
     `empresa`='$empresa',
     `telefone`='$telefone',
+    `celular`='$celular',
+    `email`='$email',
     `cep`='$cep',
     `rua`='$rua',
     `bairro`='$bairro',

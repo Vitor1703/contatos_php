@@ -9,7 +9,8 @@ require_once 'conexao.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>Contatos</title>
 </head>
 
@@ -17,7 +18,7 @@ require_once 'conexao.php';
   <header>
     <div class="container mt-4 mb-4">
       <h1 class="font-weight-bold">Meus contatos</h1>
-      <p>Listagem com seus contatos.</p>
+      <h5>Listagem dos seus contatos</h5>
     </div>
   </header>
 
@@ -35,7 +36,7 @@ require_once 'conexao.php';
           <th>Nome</th>
           <th>Sobrenome</th>
           <th>Telefone</th>
-          <th>Email</th>
+          <th>E-mail</th>
           <th>Localidade</th>
           <th>Notas</th>
           <th>Opções</th>
@@ -49,14 +50,30 @@ require_once 'conexao.php';
         $result = mysqli_query($conn, $query);
         while ($row = mysqli_fetch_assoc($result)) { ?>
           <tr>
-            <td><?php echo $row['nome'] ?></td>
-            <td><?php echo $row['sobrenome'] ?></td>
-            <td><?php echo $row['telefone'] ?></td>
-            <td><?php echo $row['email'] ?></td>
-            <td><?php echo $row['cidade'] ?></td>
-            <td><?php echo $row['notas'] ?></td>
             <td>
-              <a href="editar_contato.php?id=<?= $row['id'] ?>" class="btn btn-secondary">
+              <?php echo $row['nome'] ?>
+            </td>
+            <td>
+              <?php echo $row['sobrenome'] ?>
+            </td>
+            <td>
+              <?php echo $row['celular'] ?>
+            </td>
+            <td>
+              <?php echo $row['email'] ?>
+            </td>
+            <td>
+              <?php echo $row['cidade'] ?>
+            </td>
+            <td>
+              <?php echo $row['notas'] ?>
+            </td>
+            <td>
+
+              <a href="detalhes_contato.php?id=<?= $row['id'] ?>" class="btn btn-secondary">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="editar_contato.php?id=<?= $row['id'] ?>" class="btn btn-primary">
                 <i class="fas fa-marker"></i>
               </a>
               <a href="f_apagar_contato.php?id=<?= $row['id'] ?>" class="btn btn-danger">

@@ -10,11 +10,19 @@ require_once 'f_editar_contato.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Editar contato</title>
+    <script src="f_formatar.js"></script>
 </head>
 
 <body>
+    <header>
+        <div class="container mt-4 mb-4">
+            <h1 class="font-weight-bold">Editar contato</h1>
+        </div>
+    </header>
+
     <div class="container mt-5">
         <form action="f_editar_contato.php?id=<?= $row['id'] ?>" method="POST">
 
@@ -25,18 +33,32 @@ require_once 'f_editar_contato.php';
                 </div>
                 <div class="form-group col-md-6">
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="<?= $sobrenome ?>" required>
+                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="<?= $sobrenome ?>"
+                        required>
                 </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-4">
                     <label for="empresa">Empresa</label>
                     <input type="text" class="form-control" id="empresa" name="empresa" value="<?= $empresa ?>">
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone" value="<?= $telefone ?>">
+                <div class="form-group col-md-4">
+                    <label for="celular">Telefone (Celular)</label>
+                    <input type="tel" class="form-control" id="celular" name="celular"
+                        oninput="formatarTelefoneCelular(this)" required value="<?= $celular ?>">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="telefone">Telefone (Fixo)</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone"
+                        oninput="formatarTelefoneFixo(this)" required value="<?= $telefone ?>">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" value="<?= $email ?>">
                 </div>
             </div>
 
@@ -76,7 +98,8 @@ require_once 'f_editar_contato.php';
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="aniversario">Aniversário</label>
-                    <input type="date" class="form-control" id="aniversario" name="aniversario" value="<?= $aniversario ?>">
+                    <input type="date" class="form-control" id="aniversario" name="aniversario"
+                        value="<?= $aniversario ?>">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="notas">Notas</label>

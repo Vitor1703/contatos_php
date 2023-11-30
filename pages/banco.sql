@@ -6,6 +6,7 @@ CREATE TABLE contatos (
     sobrenome VARCHAR(255) DEFAULT NULL,
     empresa VARCHAR(255) DEFAULT NULL,
     telefone VARCHAR(20) NOT NULL,
+    celular VARCHAR(20) NOT NULL,
     email VARCHAR(100) DEFAULT NULL,
     cep VARCHAR(10) DEFAULT NULL,
     rua VARCHAR(255) DEFAULT NULL,

@@ -6,6 +6,8 @@ $nome = $_POST['nome'];
 $sobrenome = $_POST['sobrenome'];
 $empresa = $_POST['empresa'];
 $telefone = $_POST['telefone'];
+$celular = $_POST['celular'];
+$email = $_POST['email'];
 $cep = $_POST['cep'];
 $rua = $_POST['rua'];
 $bairro = $_POST['bairro'];
@@ -15,8 +17,8 @@ $pais = $_POST['pais'];
 $aniversario = $_POST['aniversario'];
 $notas = $_POST['notas'];
 
-$sqlInsert = "INSERT INTO `contatos`(`id`, `nome`, `sobrenome`, `empresa`, `telefone`, `cep`, `rua`, `bairro`, `cidade`, `estado`, `pais`, `aniversario`, `notas`) VALUES 
-(null,'$nome','$sobrenome', '$empresa', '$telefone', '$cep', '$rua', '$bairro', '$cidade', '$estado', '$pais', '$aniversario', '$notas')";
+$sqlInsert = "INSERT INTO `contatos`(`id`, `nome`, `sobrenome`, `empresa`, `telefone`, `celular`, `email`, `cep`, `rua`, `bairro`, `cidade`, `estado`, `pais`, `aniversario`, `notas`) VALUES 
+(null,'$nome','$sobrenome', '$empresa', '$telefone', '$celular', '$email', '$cep', '$rua', '$bairro', '$cidade', '$estado', '$pais', '$aniversario', '$notas')";
 $result = mysqli_query($conn, $sqlInsert);
 
 if (!$result) {
