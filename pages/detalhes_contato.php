@@ -10,8 +10,7 @@ require_once 'f_detalhes_contato.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Detalhes do Contato</title>
 </head>
 
@@ -28,31 +27,26 @@ require_once 'f_detalhes_contato.php';
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="nome">Nome</label>
-                    <input type="text" class="form-control" id="nome" name="nome" value="<?= $nome ?>" readonly
-                        required>
+                    <input type="text" class="form-control" id="nome" name="nome" value="<?= $nome ?>" readonly required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="<?= $sobrenome ?>"
-                        readonly required>
+                    <input type="text" class="form-control" id="sobrenome" name="sobrenome" value="<?= $sobrenome ?>" readonly required>
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="empresa">Empresa</label>
-                    <input type="text" class="form-control" id="empresa" name="empresa" value="<?= $empresa ?>" readonly
-                        readonly>
+                    <input type="text" class="form-control" id="empresa" name="empresa" value="<?= $empresa ?>" readonly readonly>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="celular">Telefone (Celular)</label>
-                    <input type="tel" class="form-control" id="celular" name="celular"
-                        oninput="formatarTelefoneCelular(this)" required value="<?= $celular ?>" readonly>
+                    <input type="tel" class="form-control" id="celular" name="celular" oninput="formatarTelefoneCelular(this)" required value="<?= $celular ?>" readonly>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="telefone">Telefone (Fixo)</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone"
-                        oninput="formatarTelefoneFixo(this)" required value="<?= $telefone ?>" readonly>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" oninput="formatarTelefoneFixo(this)" required value="<?= $telefone ?>" readonly>
                 </div>
             </div>
 
@@ -99,13 +93,16 @@ require_once 'f_detalhes_contato.php';
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="aniversario">Aniversário</label>
-                    <input type="date" class="form-control" id="aniversario" name="aniversario"
-                        value="<?= $aniversario ?>" readonly>
+                    <input type="date" class="form-control" id="aniversario" name="aniversario" value="<?= $aniversario ?>" readonly>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="notas">Notas</label>
                     <textarea class="form-control" id="notas" name="notas" rows="3" readonly><?= $notas ?></textarea>
                 </div>
+            </div>
+
+            <div class="form-group">
+                <a href="contatos.php" class="btn btn-success">Voltar</a>
             </div>
         </form>
     </div>

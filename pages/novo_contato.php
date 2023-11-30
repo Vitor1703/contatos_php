@@ -9,8 +9,7 @@ require_once 'conexao.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Novo contato</title>
     <script src="f_formatar.js"></script>
 </head>
@@ -42,13 +41,11 @@ require_once 'conexao.php';
                 </div>
                 <div class="form-group col-md-4">
                     <label for="telefone">Telefone (Celular)</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone"
-                        oninput="formatarTelefoneCelular(this)" required>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" oninput="formatarTelefoneCelular(this)" required>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="telefone">Telefone (Fixo)</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone"
-                        oninput="formatarTelefoneFixo(this)" required>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" oninput="formatarTelefoneFixo(this)" required>
                 </div>
             </div>
 
@@ -103,7 +100,14 @@ require_once 'conexao.php';
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Salvar</button>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <a href="contatos.php" class="btn btn-success">Voltar</a>
+                </div>
+                <div class="form-group col-md-6 text-right">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
         </form>
     </div>
 
